@@ -33,9 +33,9 @@ public class TestCantantesFamosos {
 	        	System.out.println("Ingrese un nuevo cantane: ");
 	        	nombre.pedirEntrada();
 	        	System.out.println("Ingrese un nuevo disco: ");
-	        	cantanteX.setNombre(nombre.getEntrada());
+	        	cantanteX.setNombre(nombre.getTextoCapitalizado());
 	        	disco.pedirEntrada();
-	        	cantanteX.setDiscoConMasVentas(disco.getEntrada());	        	
+	        	cantanteX.setDiscoConMasVentas(disco.getTextoCapitalizado());	        	
 	        	listaCantantes.nuevoCantante(cantanteX);
 	        	System.out.println("Desea ingrersar mas discos? (s/n):");
 	            respuesta.pedirEntrada();
