@@ -13,10 +13,5 @@ public class ListaCantantesFamosos {
         listaCantantesFamosos.add(cantante);
     }
     
-    public void nuevoCantante(CantanteFamoso cantante){
-    	CantanteFamoso cantanteX = new CantanteFamoso(cantante.getNombre(), cantante.getDiscoConMasVentas());
-    	this.addCantanteFamoso(cantanteX);
-    }
-    
     
 }
