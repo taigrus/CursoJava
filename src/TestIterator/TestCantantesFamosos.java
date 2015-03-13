@@ -24,6 +24,25 @@ public class TestCantantesFamosos {
         CantanteFamoso cantante3 = new CantanteFamoso(nombre.getEntrada(),disco.getEntrada());
         listaCantantes.addCantanteFamoso(cantante3);
         listarCantantes(listaCantantes);
+        
+        System.out.println("Desea ingrersar mas discos? (s/n):");
+        EntradaDeTexto respuesta = new EntradaDeTexto();
+        do{       	
+	        if (respuesta.getEntrada().equalsIgnoreCase("S")){
+	        	CantanteFamoso cantanteX = new CantanteFamoso("", "");
+	        	System.out.println("Ingrese un nuevo cantane: ");
+	        	nombre.pedirEntrada();
+	        	System.out.println("Ingrese un nuevo disco: ");
+	        	cantanteX.setNombre(nombre.getEntrada());
+	        	disco.pedirEntrada();
+	        	cantanteX.setDiscoConMasVentas(disco.getEntrada());	        	
+	        	listaCantantes.nuevoCantante(cantanteX);
+	        	System.out.println("Desea ingrersar mas discos? (s/n):");
+	            respuesta.pedirEntrada();
+	        }
+        }while(respuesta.getEntrada().equalsIgnoreCase("S"));
+        listarCantantes(listaCantantes);
+        
     }
     
 	private static void listarCantantes(ListaCantantesFamosos lista){
