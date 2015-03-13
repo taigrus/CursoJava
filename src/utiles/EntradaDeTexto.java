@@ -35,6 +35,7 @@ public class EntradaDeTexto{
             return "null";
         }else
         {
+        	entradaTeclado = entradaTeclado.toLowerCase();
             String caracterActual=entradaTeclado.substring(0,1);
             String cadenaCapitalizada=caracterActual.toUpperCase();
             for (int i=1; i< entradaTeclado.length();i++){
