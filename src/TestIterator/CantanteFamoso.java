@@ -13,12 +13,12 @@ public class CantanteFamoso {
         this.nombre = nombre;
     }
     
-    public String getNombre(){
-        return this.nombre;
-    }
-    
     public void setDiscoConMasVentas(String disco){
         this.discoConMasVentas=disco;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
     }
     
     public String getDiscoConMasVentas(){
