@@ -18,9 +18,9 @@ public class ListaCantantesFamosos {
     
     public void addFormularioCantanteFamoso(){
     	EntradaDeTexto nombre, disco;
-    	System.out.println("Ingrese el nombre de un nuevo cantane: ");
+    	System.out.print("Ingrese el nombre de un nuevo cantane: ");
         nombre = new EntradaDeTexto();
-        System.out.println("Ingrese el nombre de disco más vendido para este cantante: ");
+        System.out.print("Ingrese el nombre de disco más vendido para este cantante: ");
         disco = new EntradaDeTexto();
         listaCantantesFamosos.add(new CantanteFamoso(nombre.getTextoCapitalizado(), disco.getTextoCapitalizado()));
     }
@@ -31,8 +31,8 @@ public class ListaCantantesFamosos {
     	CantanteFamoso tmpCantante= new CantanteFamoso("", "");
     	while(it.hasNext()){
     		tmpCantante = it.next();
-    		System.out.print("Cantante: " + tmpCantante.getNombre());
-        	System.out.print("\tDisco más vendido: " + tmpCantante.getDiscoConMasVentas()+"\n");
+    		System.out.printf("Cantante: %s", tmpCantante.getNombre());
+        	System.out.printf("\tDisco más vendido: %s\n", tmpCantante.getDiscoConMasVentas());
     	}    	
     }   
 }
