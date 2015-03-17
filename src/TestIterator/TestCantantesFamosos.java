@@ -13,12 +13,12 @@ public class TestCantantesFamosos {
         listaCantantes.listarCantantes();
         listaCantantes.addFormularioCantanteFamoso();
         listaCantantes.listarCantantes();       
-        System.out.print("¿Desea continuar registrando cantantes y discos? (s/n):");
+        System.out.println("¿Desea continuar registrando cantantes y discos? (s/n):");
         EntradaDeTexto respuesta = new EntradaDeTexto();
         do{       	
 	        if (respuesta.getEntrada().equalsIgnoreCase("S")){
 	        	listaCantantes.addFormularioCantanteFamoso();
-	        	System.out.print("¿Desea continuar registrando cantantes y discos? (s/n):");
+	        	System.out.println("¿Desea continuar registrando cantantes y discos? (s/n):");
 	            respuesta.pedirEntrada();
 	        }
         }while(respuesta.getEntrada().equalsIgnoreCase("S"));
