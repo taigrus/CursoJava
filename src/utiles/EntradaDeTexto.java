@@ -51,8 +51,7 @@ public class EntradaDeTexto{
             }
             return cadenaCapitalizada;
         }
-    }
-    
+    }    
     public int getLongitud(){
         return entradaTeclado.length();
     }
