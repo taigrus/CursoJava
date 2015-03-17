@@ -3,6 +3,8 @@ package TestIterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import utiles.EntradaDeTexto;
+
 public class ListaCantantesFamosos {
     public ArrayList<CantanteFamoso> listaCantantesFamosos;
 
@@ -11,7 +13,16 @@ public class ListaCantantesFamosos {
     }
         
     public void addCantanteFamoso(CantanteFamoso cantante){
-        listaCantantesFamosos.add(cantante);
+    	listaCantantesFamosos.add(cantante);
+    }
+    
+    public void addFormularioCantanteFamoso(){
+    	EntradaDeTexto nombre, disco;
+    	System.out.println("Ingrese el nombre de un nuevo cantane: ");
+        nombre = new EntradaDeTexto();
+        System.out.println("Ingrese el nombre de disco más vendido para este cantante: ");
+        disco = new EntradaDeTexto();
+        listaCantantesFamosos.add(new CantanteFamoso(nombre.getTextoCapitalizado(), disco.getTextoCapitalizado()));
     }
     
 	public void listarCantantes(){
