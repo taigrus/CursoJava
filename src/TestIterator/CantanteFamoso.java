@@ -4,6 +4,11 @@ public class CantanteFamoso {
     private String nombre;
     private String discoConMasVentas;
     
+    public CantanteFamoso(){
+    	nombre="";
+    	discoConMasVentas="";
+    }
+    
     public CantanteFamoso(String valorNombre, String valorDisco){
         setNombre(valorNombre);
         setDiscoConMasVentas(valorDisco);
