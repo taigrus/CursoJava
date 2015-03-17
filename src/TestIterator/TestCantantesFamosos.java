@@ -5,9 +5,6 @@ import utiles.EntradaDeTexto;
 
 public class TestCantantesFamosos {
 	
-
-	
-	
     public static void main(String[] args){
         ListaCantantesFamosos listaCantantes;
         listaCantantes=new ListaCantantesFamosos();
