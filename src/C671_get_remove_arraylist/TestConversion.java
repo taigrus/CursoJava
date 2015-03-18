@@ -18,7 +18,7 @@ public class TestConversion {
 
 		    for (int i=0; i < tmpAL.size(); i++) {
 		       System.out.println ("Eliminamos ítem "+ (tmpAL.get(i)+1) +": " + miListadoAL.get(tmpAL.get(i) ) );
-		        miListadoAL.remove((int)tmpAL.get(i) );
+		        miListadoAL.remove((int)tmpAL.get(i));
 		    }
 
 		    System.out.println("Valor devuelto por size() en miListadoAL después de borrado: " + miListadoAL.size() );
