@@ -15,7 +15,7 @@ public class ListaNumeros {
 	         return suma;
 	     }
 
-	     public void añadirItem (Integer item) {
+	     public void addItem (Integer item) {
 	           listaDeNumeros.add (item);
 	     } 
 }
