@@ -8,6 +8,6 @@ public class Ejemplo1 {
     	String entradaUsuario = JOptionPane.showInputDialog ( "Introduzca un número:" );
     	//entradaUsuario=(Integer)entradaUsuario;
         entradaInt = entradaInt.valueOf(entradaUsuario);
-        System.out.println ("El doble del número introducido es: " + 2*entradaInt + " y el cuadrado es: " + entradaInt*entradaInt);    	
+        System.out.println ("El doble del número introducido es: " + 2*entradaInt + " y el cuadrado es el siguiente: " + entradaInt*entradaInt);    	
     }
 }
