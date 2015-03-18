@@ -20,7 +20,7 @@ public class ListaCantantesFamosos {
     	EntradaDeTexto nombre, disco;
     	System.out.print("Ingrese el nombre de un nuevo cantane: ");
         nombre = new EntradaDeTexto();
-        System.out.print("Ingrese el nombre de disco m·s vendido para este cantante: ");
+        System.out.print("Ingrese el nombre de disco m√°s vendido para este cantante: ");
         disco = new EntradaDeTexto();
         listaCantantesFamosos.add(new CantanteFamoso(nombre.getTextoCapitalizado(), disco.getTextoCapitalizado()));
     }
@@ -32,7 +32,7 @@ public class ListaCantantesFamosos {
     	while(it.hasNext()){
     		tmpCantante = it.next();
     		System.out.printf("Cantante: %s", tmpCantante.getNombre());
-        	System.out.printf("\tDisco m·s vendido: %s\n", tmpCantante.getDiscoConMasVentas());
+        	System.out.printf("\tDisco m√°s vendido: %s\n", tmpCantante.getDiscoConMasVentas());
     	}    	
     }   
 }
