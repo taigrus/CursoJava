@@ -8,7 +8,7 @@ public class TestConversion {
 		    ArrayList<Integer> miListadoAL;
 		    miListadoAL = new ArrayList<Integer>();
 		    ArrayList<Integer> tmpAL = new ArrayList<Integer>();
-		    miListadoAL.add(44); miListadoAL.add(7); miListadoAL.add(76); miListadoAL.add(29); miListadoAL.add(17);
+		    miListadoAL.add(4); miListadoAL.add(117); miListadoAL.add(76); miListadoAL.add(129); miListadoAL.add(17);
 		   //Recorremos el ArrayList con un for normal quedándonos con los elementos que van a ser operados a posteriori
 		    for (int i=1; i <= miListadoAL.size(); i++) {
 		        if (miListadoAL.get(i-1) < 10) { System.out.println ("Detectado un objeto (" + i +"):"+miListadoAL.get(i-1)+ ", integer con valor menor de 10, será eliminado");
@@ -27,5 +27,5 @@ public class TestConversion {
 		        System.out.println ("Elemento en el array list ("+(tmpInt+1)+") : " + tmpObjeto);
 		        tmpInt++;
 		    }
-		} //Cierre del main
+	 }
 }
