@@ -9,5 +9,6 @@ public class Ejemplo1 {
         entradaInt=entradaInt.valueOf(entradaUsuario);
         //String salida = JOptionPane.showInternalMessageDialog(null,"El doble del número introducido es: ","Mnesaje",JOptionPane.INFORMATION_MESSAGE);
         System.out.println ("El doble del número introducido es: " + 2*entradaInt + " y el cuadrado del número que introdujo, es: " + entradaInt*entradaInt);    	
+        
     }
 }
